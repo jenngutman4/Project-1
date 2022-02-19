@@ -6,7 +6,7 @@ class StackedLine {
       parentElement: _config.parentElement,
       containerWidth: _config.containerWidth || 500,
       containerHeight: _config.containerHeight || 140,
-      margin: { top: 30, bottom: 30, right: 100, left: 30 }
+      margin: { top: 30, bottom: 30, right: 100, left: 35 }
     }
 
     this.data = _data;

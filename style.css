@@ -1,0 +1,125 @@
+.item1 { grid-area: AQI1; }
+.item2 { grid-area: AQI2; }
+.item3 { grid-area: gas1; }
+.item4 { grid-area: gas2; }
+.item5 { grid-area: no1; }
+.item6 { grid-area: no2; }
+.item7 { grid-area: bar11; }
+.item8 { grid-area: bar12; }
+.item9 { grid-area: bar21; }
+.item10 { grid-area: bar22; }
+.dd1 { grid-area: box1; }
+.dd2 { grid-area: box2; }
+.dd3 { grid-area: box3; }
+.dd4 { grid-area: box4; }
+.item11{grid-area: map}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'box1 box1 box2 box2 box3 box3 box4 box4'
+    'AQI1 AQI1 AQI1 AQI1 AQI2 AQI2 AQI2 AQI2'
+    'gas1 gas1 gas1 gas1 gas2 gas2 gas2 gas2'
+    'no1 map map map map map map no2'
+    'bar11 map map map map map map bar21'
+    'bar12 map map map map map map bar22';
+  grid-gap: 0px;
+  background-color: #2196F3;
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 0px 0;
+  
+}
+
+.header > p {
+  padding: 0px;
+  text-align: center;
+  background: white;
+  color: black;
+  font-size: 20px;
+  line-height:20px;
+}
+
+.header > h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  font-size: 28px;
+  line-height:20px;
+}
+
+.title {
+  padding: 0px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 100px;
+  color: #333;
+}
+.tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+#tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 10px;
+}
+
+.background {
+            fill: none;
+            pointer-events: all;
+}
+
+#states {
+    fill: #aaa;
+}
+
+#states .active {
+    display:none;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.county-boundary {
+    fill: gray;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.county-boundary:hover, .state:hover {
+    fill: orange;
+}
+
+
+.legend-title {
+  font-size: .7rem;
+  font-weight: 600;
+}
+.legend-label {
+  font-size: .7rem;
+}
